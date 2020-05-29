@@ -9,6 +9,7 @@
 //! features = ["framework", "standard_framework"]
 //! ```
 mod commands;
+mod aws;
 
 use std::{
     collections::HashSet,
@@ -27,7 +28,6 @@ use serenity::{
 use log::{error, info};
 
 use commands::{
-    math::*,
     meta::*,
     owner::*,
     minecraft::*,
@@ -51,7 +51,7 @@ impl EventHandler for Handler {
 }
 
 #[group]
-#[commands(multiply, ping, quit, test, restart)]
+#[commands(ping, quit, start, restart)]
 struct General;
 
 fn main() {

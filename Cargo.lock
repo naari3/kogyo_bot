@@ -724,6 +724,7 @@ dependencies = [
  "log",
  "rusoto_autoscaling",
  "rusoto_core",
+ "rusoto_ssm",
  "serenity",
  "tokio",
 ]
@@ -1309,6 +1310,20 @@ dependencies = [
  "sha2",
  "time 0.2.16",
  "tokio",
+]
+
+[[package]]
+name = "rusoto_ssm"
+version = "0.43.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "309899e074b05cb8b80c1c82b71920ccb4f4506d383306e307c78d41ed942a39"
+dependencies = [
+ "async-trait",
+ "bytes 0.5.4",
+ "futures",
+ "rusoto_core",
+ "serde",
+ "serde_json",
 ]
 
 [[package]]
