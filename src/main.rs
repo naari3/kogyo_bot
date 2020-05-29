@@ -51,7 +51,7 @@ impl EventHandler for Handler {
 }
 
 #[group]
-#[commands(multiply, ping, quit, start, restart)]
+#[commands(multiply, ping, quit, test, restart)]
 struct General;
 
 fn main() {

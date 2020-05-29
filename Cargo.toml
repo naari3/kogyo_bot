@@ -11,3 +11,6 @@ env_logger = "0.6"
 kankyo = "0.2"
 log = "0.4"
 serenity = "0.8"
+rusoto_core = "0.43.0"
+rusoto_autoscaling = "0.43.0"
+tokio = { version = "0.2", features = ["full"] }
